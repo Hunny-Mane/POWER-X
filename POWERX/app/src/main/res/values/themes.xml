@@ -1,0 +1,17 @@
+<resources>
+    <!-- Base theme for your app -->
+    <style name="Base.Theme.POWERX" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize the status bar color -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <!-- Define other colors, like primary and accent colors, if needed -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+        <!-- You can also add custom styles for text, buttons, etc. -->
+    </style>
+
+    <!-- Optional: Define a more specific AppTheme if needed -->
+    <style name="AppTheme" parent="Base.Theme.POWERX">
+        <!-- Add more specific customizations here if needed -->
+    </style>
+</resources>

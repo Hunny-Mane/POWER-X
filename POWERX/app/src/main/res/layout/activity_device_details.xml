@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="0dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1F1F1F"
+        android:title="PowerX"
+        android:titleTextColor="#FFFFFF"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:elevation="4dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Device Address"
+            android:textColor="#B0B0B0"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/left_battery_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery: --%"
+            android:textColor="#00E676"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="30dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/connect_disconnect_button"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:text="Connect"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="#2A2A2A"
+                app:strokeColor="#444444"
+                app:strokeWidth="1dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/equalizer_btn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="Equalizer"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="#2A2A2A"
+                app:strokeColor="#444444"
+                app:strokeWidth="1dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestures"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rounded_list"
+            android:clipToOutline="true"
+            android:elevation="4dp"
+            android:padding="12dp">
+
+            <LinearLayout
+                android:id="@+id/gesture_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

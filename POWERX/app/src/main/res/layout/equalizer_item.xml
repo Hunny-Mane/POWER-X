@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/equalizer_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/collapsible_background"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="6dp">
+
+    <!-- Title and switch area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/equalizer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Bass Boost"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:thumbTint="@color/switch_thumb_off"
+            android:trackTint="@color/switch_track_off" />
+
+    </LinearLayout>
+
+    <!-- Description (hidden by default) -->
+    <LinearLayout
+        android:id="@+id/equalizer_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:visibility="gone"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enhances bass frequencies for deeper sound."
+            android:textColor="#CCCCCC" />
+
+        <Switch
+            android:id="@+id/switch_sample"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:textColor="#CCCCCC"
+            android:layout_marginLeft="5dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>
